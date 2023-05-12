@@ -24,4 +24,9 @@ public class BallController : MonoBehaviour
             rb.AddForce(direction * force, ForceMode.Impulse);
         }
     }
+
+    public bool IsMove()
+    {
+        return rb.velocity != Vector3.zero;
+    }
 }
