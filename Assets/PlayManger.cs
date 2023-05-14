@@ -7,6 +7,8 @@ public class PlayManger : MonoBehaviour
     [SerializeField] CameraController camController;
 
     bool isBallOutside;
+    bool isBallTeleporting;
+    bool isGoal;
     Vector3 lastBallPosition;
     private void Update() {
 
@@ -23,20 +25,40 @@ public class PlayManger : MonoBehaviour
        camController.SetInputActive(InputActive);
     }
 
-    public void OnBallOutside()
+    public void OnBallGoalEnter()
     {
-       Debug.Log("OnBallOutside " + lastBallPosition); 
-       isBallOutside = true; 
-       //Invoke("MoveBallLastPosition",1);
-       MoveBallLastPosition();
+        isGoal = true;
+        ballController.enabled = false;
+        // TODO window player win pop up 
     }
 
-    public void MoveBallLastPosition()
+    public void OnBallOutside()
+    {
+       if(isGoal)
+         return;
+
+       if(isBallTeleporting == false)
+            Invoke("TeleportBallLastPosition",3);
+
+       ballController.enabled = false;
+       isBallOutside = true; 
+       isBallTeleporting = true;
+    }
+
+    public void TeleportBallLastPosition()
+    {
+        TeleportBall(lastBallPosition);
+    }
+
+    public void TeleportBall(Vector3 targetPosition)
     {
         var rb = ballController.GetComponent<Rigidbody>();
         rb.isKinematic = true;
-        ballController.transform.position = lastBallPosition;
+        ballController.transform.position = targetPosition;
         rb.isKinematic = false;
+
+        ballController.enabled = true;
         isBallOutside = false;
+        isBallTeleporting = false;
     }
 }

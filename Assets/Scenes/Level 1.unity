@@ -444,7 +444,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184666277}
-  m_LocalRotation: {x: 0.06721428, y: 0.55777335, z: -0.04538664, w: 0.8260214}
+  m_LocalRotation: {x: 0.06721429, y: 0.5577734, z: -0.045386657, w: 0.8260213}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -522,7 +522,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240755103}
-  m_LocalRotation: {x: 0.052178256, y: 0.55850667, z: -0.035233524, w: 0.82710725}
+  m_LocalRotation: {x: 0.05217826, y: 0.55850667, z: -0.035233524, w: 0.82710725}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -838,7 +838,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.05217826, y: 0.55850667, z: -0.03523353, w: 0.82710725}
+  m_LocalRotation: {x: 0.052178267, y: 0.55850667, z: -0.035233535, w: 0.82710725}
   m_LocalPosition: {x: 4.885334, y: 3, z: 1.9679818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -950,6 +950,34 @@ PrefabInstance:
     - target: {fileID: 1708120045584021351, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
       propertyPath: m_Name
       value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499461838}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBallGoalEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayManger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987556988407468259, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c041878616ebb4c98de1c0c3f0b565, type: 3}
@@ -1067,7 +1095,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1204206517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1204206516}
-  force: 1000
+  force: 100
   aimLine: {fileID: 1219045796}
   aimWorld: {fileID: 1682326382}
 --- !u!1 &1213264217
@@ -1176,8 +1204,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213264217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 500, y: 1, z: 500}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -10,7 +10,6 @@ public class Outside : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.transform.CompareTag("Ball"))
         {
-            Debug.Log("OnBallEnter");
             OnBallEnter.Invoke();
         }
     }
