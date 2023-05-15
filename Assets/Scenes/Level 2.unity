@@ -667,8 +667,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184666277}
-  m_LocalRotation: {x: 0.08110302, y: -0.0009016146, z: 0.00007336537, w: 0.99670535}
-  m_LocalPosition: {x: -0.0000000037252903, y: 0, z: 0}
+  m_LocalRotation: {x: 0.08110302, y: -0.0009016178, z: 0.000073365634, w: 0.99670535}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -745,7 +745,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240755103}
-  m_LocalRotation: {x: 0.06296006, y: -0.00090283423, z: 0.000056955523, w: 0.99801564}
+  m_LocalRotation: {x: 0.06296006, y: -0.0009028374, z: 0.000056955723, w: 0.99801564}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -869,6 +869,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1059992810}
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BattleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941777455936895903, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5941777456093905329, guid: 890479f3a76ca5c4db4f1912231f355c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1307,7 +1335,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849272066}
-  m_LocalRotation: {x: 0.044844236, y: -0.0009037018, z: 0.000040566643, w: 0.99899364}
+  m_LocalRotation: {x: 0.044844236, y: -0.0009037049, z: 0.000040566785, w: 0.99899364}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1493,8 +1521,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06296007, y: -0.0009028515, z: 0.000056956615, w: 0.99801564}
-  m_LocalPosition: {x: 0.027608745, y: 3, z: -15.259975}
+  m_LocalRotation: {x: 0.06296007, y: -0.0009028546, z: 0.00005695681, w: 0.99801564}
+  m_LocalPosition: {x: 0.02760884, y: 3, z: -15.259975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2982,7 +3010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761346521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.027608745, y: 3, z: -15.259975}
+  m_LocalPosition: {x: 0.02760884, y: 3, z: -15.259975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
