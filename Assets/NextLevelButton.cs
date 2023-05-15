@@ -12,7 +12,7 @@ public class NextLevelButton : MonoBehaviour
         int NextLevel = currentLevel + 1;
         
         var nextSceneBuildIndex = SceneUtility.GetBuildIndexByScenePath("Level "+NextLevel);
-        Debug.Log(nextSceneBuildIndex);
+       // Debug.Log(nextSceneBuildIndex);
         if(nextSceneBuildIndex == -1 )
             this.gameObject.SetActive(false);
     }
