@@ -18,10 +18,9 @@ public class BallController : MonoBehaviour, IPointerDownHandler
     Vector3 forceDirection;
     Ray ray;
     Plane plane;
-
-    int shootCount;
-
+ 
     public bool ShootingMode { get => shootingMode; }
+    int shootCount;
     public int ShootCount { get => shootCount; }
     public UnityEvent<int> onBallShooted = new UnityEvent<int>();
 
@@ -76,7 +75,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
                     Camera.main.ScreenToWorldPoint(ballScreenPos),
                     Camera.main.ScreenToWorldPoint(mouseScreenPos)};
                 aimLine.SetPositions(positions);
-                aimLine.endColor = Color.Lerp(Color.blue, Color.red, forceFactor);
+                aimLine.endColor = Color.Lerp(Color.black, Color.green, forceFactor);
             }
             else if(Input.GetMouseButtonUp(0))
             {
