@@ -55,7 +55,7 @@ public class PlayManger : MonoBehaviour
 
         // TODO window player win pop up 
         finishWindow.gameObject.SetActive(true);
-        finishText.text = "Masuk Pak Eko(kata bang faris klo masuk di kasih hadiah kiko run)\n" +"Jumlah Tembakan: " +ballController.ShootCount;
+        finishText.text = "Masuk Pak Eko(Kata Bang Faris Klo Bolanya Masuk Dikasih Hadiah Kiko Run)\n" +"Jumlah Tembakan: " +ballController.ShootCount;
     }
 
     public void OnBallOutside()
